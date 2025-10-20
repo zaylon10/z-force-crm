@@ -2,30 +2,95 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #051D39; /* your color */
+    display:flex;
+    justify-content: center;
 }
-
-.signee-container {
-    border: 2px solid black; /* visible border */
-    background-color: white; /* dark background */
-    color: gray; /* text color */
-    padding: 20px; /* space inside container */
+.content-wrapper{
+    height: 75vh;
+    width: 150vh;
+    border: white 1px solid;
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    border-radius: 16px;
+    box-shadow: 0 5px 10px white;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
     width: 100%;
-    height: 100vh; /* full viewport height */
-    margin: 0;
+}
+.content-visual {
+   flex: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.customer-info{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,#35A1B7,#184751);
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.customer-info-header{
     display: flex;
     flex-direction: column;
-    gap: 15px; /* space between children */
-}
-
-.signee-container h1 {
-    margin: 0;
-    font-size: 1.5rem;
+    justify-content: center;
+    flex: 1;
     text-align: center;
+    color: white;
 }
 
-/* Style the section inside */
-.signee-container section {
+.customer-signup{
     display: flex;
     flex-direction: column;
-    gap: 10px; /* spacing between fields */
+    justify-content: space-evenly;
+    padding: 20px;
+    flex: 1;
+    gap:10px;
+}
+.visual {
+    width: 100%;
+    height: 100%;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.customer-signup input{
+    height: 5vh;
+    border-radius: 10px;
+    border-color: white;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.customer-signup-submission {
+    text-align: center;
+
+}
+img{
+    height:75vh;
+    width: 75vh;
+    border-top-left-radius: 15px;     /* top-left corner */
+    border-bottom-left-radius: 15px;
+}
+
+.customer-signup-submission button{
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    border:white 1px solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+
 }

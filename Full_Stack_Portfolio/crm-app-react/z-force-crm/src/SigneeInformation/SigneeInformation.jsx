@@ -1,60 +1,41 @@
-import React from 'react';
+import React from 'react'
 import FirstName from "./FirstName.jsx";
 import LastName from "./LastName.jsx";
-import Establishment from "./Establishment.jsx";
-import Phone from "./Phone.jsx";
 import Email from "./Email.jsx";
-import State from "./State.jsx";
-import Zipcode from "./Zipcode.jsx";
-import CustomerType from "./CustomerType.jsx";
-import City from "./City.jsx";
-
+import Establishment from "./Establishment.jsx";
+import PassWord from "./PassWord.jsx";
 
 const SigneeInformation = () => {
     return (
-        <div className="content-wrapper">
-            <div className="company-info">
-                <section className="company-integrity">
-                    <h2>Z-Force</h2>
-                    <div>
-                        <img src="./b2b.svg" alt="business-img" />
-                        <h4>Every lead and interaction,
-                            clearly organized and easily traceable
-                            — enabling teams to operate with precision
-                            and confidence.</h4>
+        <>
+            <div className="content-wrapper">
+                <div className="content">
+                    <div className="content-visual">
+                        <div className="visual">
+                            <img src="./videoframe_784.jpeg" alt="business"/>
+                        </div>
                     </div>
-                    <div>
-                        <img src="./connect.svg" alt="connection-img" />
-                        <h4>Empower businesses to communicate directly
-                            and build stronger partnerships
-                            through seamless engagement.</h4>
+                    <div className="customer-info">
+                        <div className="customer-info-header">
+                            <h1>Create New Account</h1>
+                            <p>Already have an account? log in</p>
+                        </div>
+                        <div className="customer-signup">
+                            <div className="name">
+                                <FirstName/>
+                                <LastName/>
+                            </div>
+                            <Email/>
+                            <Establishment/>
+                            <PassWord/>
+                        </div>
+                        <div className="customer-signup-submission">
+                            <button>Register</button>
+                        </div>
                     </div>
-                    <div>
-                        <img src="./documentation.svg" alt="business-img" />
-                        <h4>Track every action with precision.
-                            Maintain a verified record of interactions
-                            that builds trust and reliability.</h4>
-                    </div>
-
-                </section>
+                </div>
             </div>
-            <div className="signee-container">
-                <h2>Join Z-Force —
-                    Simplify Business Communication</h2>
-                <section >
-                    <FirstName />
-                    <LastName />
-                    <Establishment />
-                    <CustomerType />
-                    <Phone />
-                    <Email />
-                    <City />
-                    <State />
-                    <Zipcode />
-                </section>
-            </div>
-        </div>
-    );
-};
-
-export default SigneeInformation;
+        </>
+    )
+}
+export default SigneeInformation
