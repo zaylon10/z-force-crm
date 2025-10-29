@@ -1,15 +1,15 @@
 import React from 'react'
 
-const city = ({value, onChange}) => {
+const Password = ({value, onChange}) => {
     return (
         <input
             type="text"
-            name="city"
-            placeholder="City"
+            name="password"
+            placeholder="Password"
             value={value}
             onChange={onChange}
             className="form-input"
         />
     )
 }
-export default city
+export default Password

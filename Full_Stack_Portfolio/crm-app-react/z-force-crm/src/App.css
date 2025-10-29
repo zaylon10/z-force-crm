@@ -1,96 +1,125 @@
+/* Global styles */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #051D39; /* your color */
-    display:flex;
-    justify-content: center;
-}
-.content-wrapper{
-    height: 75vh;
-    width: 150vh;
-    border: white 1px solid;
+    background-color: #051D39;
     display: flex;
     justify-content: center;
-    margin: 100px auto;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+/* Wrapper for the entire content */
+.content-wrapper {
+    height: 75vh;
+    width: 150vh;
+    border: 1px solid white;
+    display: flex;
     border-radius: 16px;
     box-shadow: 0 5px 10px white;
+    overflow: hidden;
 }
+
+/* Main content container */
 .content {
     display: flex;
     flex-direction: row;
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
+
+/* Left visual section */
 .content-visual {
-   flex: 1;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-.customer-info{
     flex: 1;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to top,#35A1B7,#184751);
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
 }
-.customer-info-header{
+
+.visual img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+
+/* Right customer info section */
+.customer-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex: 1;
-    text-align: center;
-    color: white;
+    background: linear-gradient(to top, #35A1B7, #184751);
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
-.customer-signup{
+/* Header */
+.customer-info-header {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 20px;
-    flex: 1;
-    gap:10px;
-}
-.visual {
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
-.name{
+/* Signup form container */
+.customer-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+
+/* Name fields row */
+.name {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-.customer-signup input{
+
+/* Input styling */
+.customer-signup input,
+.form-input {
     height: 5vh;
-    border-radius: 10px;
-    border-color: white;
-    margin-bottom: 10px;
-    background-color: transparent;
-    color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Submit button section */
 .customer-signup-submission {
     text-align: center;
-
-}
-img{
-    height:75vh;
-    width: 75vh;
-    border-top-left-radius: 15px;     /* top-left corner */
-    border-bottom-left-radius: 15px;
+    margin-top: 10px;
 }
 
-.customer-signup-submission button{
+.customer-signup-submission button {
     color: white;
     background-color: transparent;
-    text-align: center;
-    border:white 1px solid;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 60px;
-    padding-right: 60px;
+    border: 3px solid white;
+    padding: 15px 50px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
 
+.customer-signup-submission button:hover {
+    background-color: white;
+    color: #051D39;
+}
+
+/* Form container */
+.form-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
 }

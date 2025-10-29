@@ -1,14 +1,15 @@
 import React from 'react'
 
-const Email = () => {
+const email = ({value, onChange}) => {
     return (
         <input
             type="text"
-            name="Email"
-            placeholder="Email"
-            onChange={(e) => {
-                e.target.value = e.target.value
-            }}/>
+            name="email"
+            placeholder=" Email Address"
+            value={value}
+            onChange={onChange}
+            className="form-input"
+        />
     )
 }
-export default Email
+export default email

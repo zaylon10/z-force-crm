@@ -1,14 +1,15 @@
 import React from 'react'
 
-const FirstName = () => {
+const FirstName = ({value, onChange}) => {
     return (
         <input
             type="text"
-            name="firstName"
+            name="first_name"
             placeholder="First Name"
-            onChange={(e) => {
-                e.target.value = e.target.value
-            }}/>
+            value={value}
+            onChange={onChange}
+            className="form-input"
+        />
     )
 }
 export default FirstName
