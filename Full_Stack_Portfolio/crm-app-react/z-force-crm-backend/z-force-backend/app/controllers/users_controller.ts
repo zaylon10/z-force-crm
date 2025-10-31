@@ -1,9 +1,9 @@
 // @ts-ignore
-import { HttpContextContract } from '@adonisjs/core/http'
+import { HttpContext } from '@adonisjs/core/http'
 import User from '#models/user'
 
-export default class Users_controller {
-  public async store({ request, response }: HttpContextContract) {
+export default class UsersController {
+  public async store({ request, response }: HttpContext) {
     try {
       const data = request.only([
         'first_name',
@@ -17,6 +17,7 @@ export default class Users_controller {
 
       return response.status(201).json(user)
     } catch (error) {
+      console.error(error)
       return response.status(400).json({ message: 'Error creating user', error })
     }
   }
