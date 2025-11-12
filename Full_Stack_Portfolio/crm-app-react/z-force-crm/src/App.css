@@ -123,3 +123,50 @@ html, body {
     gap: 15px;
     width: 100%;
 }
+
+.App-header-Container{
+    display: flex;
+    flex-direction: row;
+}
+.App-header{
+    width: 100vh
+
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 150vh;
+    height: 10vh;
+    color: #818181;
+}
+.nav-left{
+    display: flex;
+    flex-direction:row;
+    font-size: 1.5vh;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+    height:5vh;
+    font-size: 1.5vh;
+    justify-content: center;
+}
+
+.logo{
+    height:6vh;
+    transform: rotate(20deg);
+}
+
+.nav-menu-icon{
+    margin: 10px;
+}
+
+.nav-icon{
+    color: #818181;
+}
