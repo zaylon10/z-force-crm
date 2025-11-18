@@ -6,6 +6,10 @@ const Homepage = () => {
     return (
         <>
             <NavBar />
+            <div className="mainpage-handshake">
+                <img src="/Handshake.jpg" alt="handshake" />
+                <h1> Empowering you to win</h1>
+            </div>
         </>
     )
 }
